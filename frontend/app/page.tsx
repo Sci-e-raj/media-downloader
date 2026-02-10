@@ -127,7 +127,7 @@ export default function Home() {
     return (
       <div
         key={opt.format_id}
-        className={`group relative bg-zinc-900/80 hover:bg-zinc-800/90 border border-zinc-800 hover:border-zinc-700 rounded-xl p-5 transition-all duration-300 min-h-[120px] flex flex-col justify-between ${
+        className={`group relative bg-zinc-900/80 hover:bg-zinc-800/90 border border-zinc-800 hover:border-zinc-700 rounded-xl p-5 transition-all duration-300 min-h-30 flex flex-col justify-between ${
           isBest
             ? "ring-1 ring-amber-400/40 shadow-[0_0_20px_rgba(251,191,36,0.1)]"
             : ""
@@ -276,7 +276,7 @@ export default function Home() {
 
   function EmptyCard() {
     return (
-      <div className="min-h-[120px] rounded-xl bg-zinc-900/40 border border-dashed border-zinc-800 flex items-center justify-center text-zinc-600 text-sm">
+      <div className="min-h-30 rounded-xl bg-zinc-900/40 border border-dashed border-zinc-800 flex items-center justify-center text-zinc-600 text-sm">
         No format available
       </div>
     );
@@ -421,7 +421,7 @@ export default function Home() {
       {/* Animated Orbs */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div
-          className="absolute w-[500px] h-[500px] bg-linear-to-br from-red-600/20 to-orange-600/20 rounded-full blur-3xl"
+          className="absolute w-125 h-125 bg-linear-to-br from-red-600/20 to-orange-600/20 rounded-full blur-3xl"
           style={{
             top: "-10%",
             left: "-10%",
@@ -430,7 +430,7 @@ export default function Home() {
         ></div>
 
         <div
-          className="absolute w-[400px] h-[400px] bg-linear-to-br from-purple-600/15 to-pink-600/15 rounded-full blur-3xl"
+          className="absolute w-100 h-100 bg-linear-to-br from-purple-600/15 to-pink-600/15 rounded-full blur-3xl"
           style={{
             top: "40%",
             right: "-5%",
@@ -439,7 +439,7 @@ export default function Home() {
         ></div>
 
         <div
-          className="absolute w-[450px] h-[450px] bg-linear-to-br from-blue-600/15 to-cyan-600/15 rounded-full blur-3xl"
+          className="absolute w-112.5 h-112.5 bg-linear-to-br from-blue-600/15 to-cyan-600/15 rounded-full blur-3xl"
           style={{
             bottom: "-15%",
             left: "30%",
@@ -448,7 +448,7 @@ export default function Home() {
         ></div>
 
         <div
-          className="absolute w-[300px] h-[300px] bg-linear-to-br from-yellow-600/20 to-red-600/20 rounded-full blur-2xl"
+          className="absolute w-75 h-75 bg-linear-to-br from-yellow-600/20 to-red-600/20 rounded-full blur-2xl"
           style={{
             top: "15%",
             right: "20%",
@@ -457,7 +457,7 @@ export default function Home() {
         ></div>
 
         <div
-          className="absolute w-[250px] h-[250px] bg-linear-to-br from-green-600/15 to-emerald-600/15 rounded-full blur-2xl"
+          className="absolute w-62.5 h-62.5 bg-linear-to-br from-green-600/15 to-emerald-600/15 rounded-full blur-2xl"
           style={{
             bottom: "20%",
             left: "10%",
@@ -704,7 +704,7 @@ export default function Home() {
                 {[1, 2, 3].map((i) => (
                   <div
                     key={i}
-                    className="h-[120px] rounded-xl bg-zinc-900/80 backdrop-blur-xl border border-zinc-800/50 shimmer shadow-xl"
+                    className="h-30 rounded-xl bg-zinc-900/80 backdrop-blur-xl border border-zinc-800/50 shimmer shadow-xl"
                   />
                 ))}
               </div>
