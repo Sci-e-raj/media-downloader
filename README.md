@@ -129,34 +129,10 @@ This avoids race conditions, renaming bugs, and file‑not‑found errors.
 
 ---
 
-## 📌 Why This Project Matters
-
-This project demonstrates:
-
-- Real‑world backend engineering (process management, streaming I/O)
-- Clean API design
-- Correct handling of long‑running tasks
-- Practical UX considerations (progress feedback, file naming)
-
-It is **not a tutorial clone** — it was built by solving real bugs and edge cases.
-
----
-
 ## 🚧 Limitations
 
 - Depends on YouTube’s available formats
 - 4K downloads require separate audio/video streams
-- No authentication (by design)
-
----
-
-## 🛣️ Future Improvements
-
-- 📂 Playlist downloads
-- 🧹 Automatic cleanup of old files
-- 📊 Per‑phase progress (video / audio / merge)
-- 🧠 Persistent job tracking
-- ☁️ Cloud deployment support
 
 ---
 
